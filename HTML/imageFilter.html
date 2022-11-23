@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/imgFliter.css">
+    <title>Image Filter</title>
+</head>
+<body>
+    <header>
+        <h2 contenteditable="true">Image Filter</h2>
+    </header>
+
+    <nav>
+        <a href="/HTML/imageFilter.html">Img Filter</a>
+        <a href="/HTML/movingBtn.html">Moving Btn</a>
+        <a href="/index.html">Home</a>
+        <a href="#">Empty</a>
+        <a href="#">Empty</a>
+        <div class="animation start-home"></div>
+    </nav>
+
+    <main>
+        <section class="wrapper">
+            <div class="image-wrap">
+              <img src="/images/IMG_20210103_094208_427.jpg" alt="test img" id="img">
+              <p>
+                
+                <label for="upload" id="upload-label">
+                  <input type='file' id="upload" onchange="readURL(this);" />
+                  Choose an image
+                </label>
+              </p>
+            </div>
+                
+                <div class="slider_controllor">
+                                <table>
+                        <tr>
+                            <td><label for="blur">Blur:</label></td>
+                            <td><input data-default="0" value="0" type="range" min="0" max="5" id="blur"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="brightness">Brightness:</label></td>
+                            <td><input data-default="100" value="100" type="range" min="0" max="200" id="brightness"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="contrast">Contrast:</label></td>
+                            <td><input data-default="100" value="100" type="range" min="0" max="255" id="contrast"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="grayscale">Grayscale:</label></td>
+                            <td><input data-default="0" value="0" type="range" min="0" max="100" id="grayscale"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="invert">Invert:</label></td>
+                            <td><input data-default="0" value="0" type="range" min="0" max="100" id="invert"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="saturate">Saturate:</label></td>
+                            <td><input data-default="100" value="100" type="range" min="0" max="100" id="saturate"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="sepia">Sepia:</label></td>
+                            <td><input data-default="0" value="0" type="range" min="0" max="100" id="sepia"></td>
+                        </tr>
+                      <tr>
+                        <td><button id="btn">Reset</button></td>
+                      </tr>
+                    </table>
+                </div>
+            </section>
+          <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+            <script src="/JS/imgFilter.js"></script>
+
+    </main>
+    
+</body>
+</html>
