@@ -130,10 +130,10 @@ h2{
     position: absolute;
     white-space: nowrap;
     font-size: 1.5rem;
-    background-color: #45f37f;
+    background-color: #74aff1;
     border-radius: 5px;
     border: none;
-    color: #333;
+    color: rgb(253, 253, 253);
     padding: 10px;
     margin: 10px;
 }
